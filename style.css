@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+
+/* 프로필 이미지 */
+.img {
+  justify-content: center;
+}
+#porfile-img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid lightpink;
+  transform: scale(1); /* 이미지 사이즈 고정 */
+  border-radius: 70%;
+}
+
+.menu-bar {
+  position: fixed;
+  border: 0;
+  background-color: lightpink;
+  display: block;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 목차 */
+.index h3 {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 목차 각 항목 반응형 커서 */
+.index h3:hover {
+  font-size: 1.1em;
+  opacity: 1;
+  text-shadow: 0.7px 0.7px 0.7px #000;
+}
+
+/* about page */
+.about {
+  text-align: left;
+  padding-left: 250px;
+  padding-top: 180px;
+  padding-bottom: 150px;
+}
+.name {
+  font-weight: 900;
+}
+.contacts {
+  font-size: 15px;
+  opacity: 0.5;
+  font-style: italic;
+}
+.about-introduction {
+  font-size: 17px;
+  opacity: 0.8;
+}
+
+/* skills page */
+.skills {
+  margin-bottom: 50px;
+  text-align: left;
+  padding-left: 250px;
+  padding-top: 180px;
+  padding-bottom: 150px;
+}
+
+.skills-introduction {
+  font-size: 17px;
+  opacity: 0.8;
+}
+
+.title {
+  font-style: italic;
+}
+
+.skills img {
+  margin-right: 30px;
+  margin-top: 10px;
+  border: 3px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-image-outset: 10px;
+  width: 150px;
+  height: 150px;
+  transition: all 0.3s ease-in-out;
+}
+/* 커서 올릴 시 이미지 크게(모든 이미지 파일에 적용) */
+img:hover {
+  transform: scale(1.7);
+  -webkit-transform: scale(1.7); /* 크롬 */
+  z-index: 1;
+  align-items: center;
+}
+
+.contents1 {
+  width: 700px;
+  margin-left: 100px;
+  margin-top: 35px;
+}
+
+.contents2 {
+  width: 700px;
+  margin-left: 350px;
+  margin-top: 30px;
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  height: 60px;
+  color: black;
+}
+.fa-solid {
+  color: black;
+  opacity: 0.4;
+}
+.fa-brands {
+  color: black;
+  opacity: 0.4;
+}
+.sns i {
+  margin-right: 10px;
+}
+/*픽토그램 반응형 커서*/
+footer i:hover {
+  transform: translate(0, -3px);
+}
